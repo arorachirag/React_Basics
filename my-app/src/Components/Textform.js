@@ -54,7 +54,7 @@ export default function Textform(props) {
         <button className="btn btn-primary mx-3" onClick={lower} >Convert to LowerCase</button>
         <button className="btn btn-primary mx-3" onClick={toggle} >{btntext}</button>
         <h2>Word Count</h2>
-        <p>There are {text1.split(" ").length} and {text1.length} characters</p>
+        <p>There are {text1.split(" ").filter((a1)=>{return a1.length!==0}).length} and {text1.length} characters</p>
         <h2>Preview</h2>
         <p>{text1}</p>
     </div>
